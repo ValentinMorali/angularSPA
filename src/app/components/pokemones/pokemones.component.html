@@ -1,0 +1,18 @@
+<h1>Pokemones <small>Kanto y Johto</small></h1>
+<hr>
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let pokemon of pokemones; let i = index">
+        <img class="card-img-top img-fluid" [src]="pokemon.img" [alt]="pokemon.nombre">
+        <div class="card-block">
+            <h4 class="card-title"> {{ pokemon.nombre }}</h4>
+            <p class="card-text"> {{ pokemon.bio }}d</p>
+
+            <button (click)="verPokemon(i)" type="button" class="btn btn-outline-primary btn-block">
+                Ver mas...
+            </button>
+
+            <!-- <a [routerLink]="['/pokemon',i]" class="btn btn-outline-primary">Ver mas link...</a> -->
+        </div>
+    </div>
+</div>
