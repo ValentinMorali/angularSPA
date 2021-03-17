@@ -1,3 +1,4 @@
+import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,4 +13,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+
+class PokemonSaluda {
+  constructor() {
+    
+  }
 }
