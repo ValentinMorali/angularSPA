@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { PokemonesComponent } from './components/pokemones/pokemones.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     HomeComponent,
     AboutComponent,
     PokemonesComponent,
-    PokemonComponent
+    PokemonComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,8 @@
 <h1 class="animated fadeIn">
-    {{ pokemon.nombre }} <small> tipo: {{ pokemon.tipo }}  </small>
+    {{ pokemon.nombre | uppercase}} <small> ({{ pokemon.capturado | date:'y' }})  </small>
 </h1>
 <hr>
+
 
 <div class="row animated fadeIn fast">
 
@@ -29,4 +30,9 @@
         <img class="img-tipo" *ngIf="pokemon.tipo == 'planta'" src="../../../assets/img/tipos/planta.png" width="100px" height="100px" alt="Tipo agua">
     </div>
 </div>
+</div>
+
+
+<div>
+    
 </div>
